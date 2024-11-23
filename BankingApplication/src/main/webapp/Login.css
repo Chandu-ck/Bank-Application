@@ -1,0 +1,90 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,76,1) 35%, rgba(0,212,255,1) 100%);
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc);  Gradient background from purple to blue */
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+h2 {
+    color: #ffffff;  /* White color for header text */
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 100px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Form Container */
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Slight transparency for the form background */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    color: #333333;  /* Dark gray for labels */
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7f7f7;  /* Light gray background */
+    transition: border-color 0.3s ease, background-color 0.3s ease;  /* Smooth transition */
+}
+
+/* Focused Input Styling */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4caf50;  /* Green border when focused */
+    background-color: #ffffff;  /* White background on focus */
+    outline: none;  /* Remove default outline */
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #4caf50;  /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #45a049;  /* Darker green on hover */
+    transform: translateY(-2px);  /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 30px;
+        width: 90%;
+    }
+}

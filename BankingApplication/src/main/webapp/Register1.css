@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(34, 193, 195); /* Base color */
+    background: linear-gradient(263deg, rgba(34, 193, 195, 1) 5%, rgba(131, 119, 91, 1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    width: 400px;
+    max-width: 90%;
+    text-align: left;
+}
+
+/* Label Styling */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #e0e0e0;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #4caf50;
+    box-shadow: 0px 4px 8px rgba(76, 175, 80, 0.3); /* Green glow on hover */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(76, 175, 80, 0.5); /* Enhanced green glow */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #4caf50; /* Primary Green */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker Green */
+    transform: scale(1.05); /* Slight enlarge effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Form Styling for Smaller Screens */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,105 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 79, 9, 1) 35%, rgba(114, 87, 24, 1) 39%, rgba(0, 212, 255, 1) 100%);
+    margin: 40px;
+    padding: 30px;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Container Styling */
+.container {
+    max-width: 450px;  /* Reduced the max-width */
+    width: 90%;
+    padding: 20px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent container background */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 28px;  /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Actions Section */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Reduced the gap between links */
+    margin-bottom: 20px;
+}
+
+/* Links Styling */
+.actions a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 12px 18px; /* Reduced padding */
+    border-radius: 8px;
+    font-size: 16px;  /* Reduced font size */
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Full width of parent container */
+    max-width: 400px; /* Ensure all links are of equal size */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Hover Effect for Links */
+.actions a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Brighter background on hover */
+    transform: translateY(-3px); /* Slight upward motion */
+}
+
+/* Logout Button Styling */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px 18px; /* Reduced padding */
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4d4d; /* Red background for logout button */
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Adds space between links and logout button */
+}
+
+/* Logout Button Hover Effect */
+form input[type="submit"]:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight upward motion */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduced padding for smaller screen */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .actions a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}

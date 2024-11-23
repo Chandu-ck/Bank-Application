@@ -1,0 +1,52 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background: url('bank.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Applies blur effect to the background */
+}
+
+/* Heading styling */
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #0047ab;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #ffd700;
+    color: #0047ab;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Active state for links */
+a:active {
+    transform: translateY(2px);
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+}
